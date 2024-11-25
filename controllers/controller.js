@@ -13,7 +13,7 @@ export const login = async (req, res) => {
         res.status(200).json({ jwtToken });
       }
       if (response === null) {
-        res.status(500).json({ message: "NO User Found" });
+        res.status(500).json({ message: "No User Found" });
       }
     })
     .catch((error) => {
